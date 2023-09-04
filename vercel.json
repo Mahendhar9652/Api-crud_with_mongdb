@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "my-backend",
+    "builds": [
+      { "src": "./index.js",
+       "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/" },
+      { "handle": "filesystem" }
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
+  
